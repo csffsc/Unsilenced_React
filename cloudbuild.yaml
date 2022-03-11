@@ -1,0 +1,7 @@
+steps:
+- name: "node:16"
+  entrypoint: npm
+  args: ["npm", "install"]
+- name: "node:16"
+  entrypoint: npm
+  args: ["npm", "start"]
