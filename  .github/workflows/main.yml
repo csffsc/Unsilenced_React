@@ -3,7 +3,7 @@ name: Google Cloud Run Deploy
 on:
   push:
     branches:
-      - devops/ci-cd-setup
+      - main
 
 
 env:
