@@ -12,8 +12,6 @@ env:
   PROJECT_ID: unsilenced-search
   RUN_REGION: us-central1
   SERVICE_NAME: unsilenced-search
-#  GCR_SA_KEY:
-
 
 jobs:
   build:
