@@ -3,7 +3,7 @@ name: Google Cloud Run Deploy
 on:
   push:
     branches:
-      - main
+      - main    #will be changed later to website after testing
   pull_request:
     branches:
       - main
