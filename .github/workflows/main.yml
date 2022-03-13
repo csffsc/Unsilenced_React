@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main    #will be changed later to website after testing
-  pull_request:
-    branches:
-      - main
+#  pull_request:
+#    branches:
+#      - main
 
 env:
   PROJECT_ID: unsilenced-search
