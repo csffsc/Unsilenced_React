@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - website
-#  pull_request:
-#    branches:
-#      - main
-
+# Env vars to use later in CD
 env:
   PROJECT_ID: unsilenced-search
   RUN_REGION: us-central1
@@ -15,6 +12,7 @@ env:
 
 jobs:
   build:
+    # build react app using node 16.13.0
     name: Build React App
     runs-on: ubuntu-latest
 
@@ -48,7 +46,7 @@ jobs:
           name: build
           path: build
 
-
+# Deploy to GC Build and then to Cloud run
   deploy-gcr:
     name: Deploy to GCR
     needs: build
@@ -63,7 +61,7 @@ jobs:
         with:
           name: build
           path: .docker/build
-
+      # Authenticate gcloud sdk using service account stored in secrets
       - name: Setup GCloud Auth
         id: auth
         uses: google-github-actions/auth@v0.4.0
