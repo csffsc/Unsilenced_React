@@ -1,7 +1,7 @@
 {
-  "engineName": "zoterowohtml",
-  "endpointBase": "https://elastic-unsilenced.ent.us-east4.gcp.elastic-cloud.com",
-  "searchKey": "search-ukmt78g5ubbqcsyztfza2yji",
+  "engineName": "unsilenced-engine",
+  "endpointBase": "https://unsilenced-search.ent.us-central1.gcp.cloud.es.io",
+  "searchKey": "search-fmc6gfctdqqukyqsckbi2xha",
   "resultFields": [
     "date",
     "data_documentnumber",
@@ -16,35 +16,35 @@
     "data_session",
     "law",
     "data_legislativebody",
-    "data_codevolume",
     "verb",
+    "data_codevolume",
     "noun",
     "cardinal",
     "data_code",
     "data_collections",
     "url_ext",
-    "data_note",
     "data_local",
+    "data_note",
     "data_datemodified",
-    "data_billnumber",
     "person",
+    "data_billnumber",
     "data_booktitle",
     "data_artworkmedium",
     "loc",
     "data_codepages",
     "links_alternate_href",
-    "data_parentitem",
     "percent",
+    "data_parentitem",
     "data_artworksize",
     "data_dateadded",
     "data_itemtype",
     "data_relations_owl_sameas",
-    "data_tags",
     "data_numpages",
+    "data_tags",
     "event",
     "key",
-    "links_up_href",
     "product",
+    "links_up_href",
     "quantity",
     "org",
     "data_committee",
@@ -62,12 +62,10 @@
     "id"
   ],
   "sortFields": [
-    "text"
+
   ],
   "facets": [
-    "data_tags",
-    "noun",
-    "person"
+    "data_tags"
   ],
   "titleField": "data_title",
   "urlField": "data_url"
